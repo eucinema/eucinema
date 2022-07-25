@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.topics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+    margin: 50px;
+}   
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cover {
+    max-width: 350px;
+    max-height: 190px;
+}
+
+.article-title {
+    max-width: 340px;
+}
+
+.article-description {
+    max-width: 340px;
+}
