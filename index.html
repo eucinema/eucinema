@@ -11,25 +11,27 @@
 </head>
 <body>
     <header>
-        <div class="menu-bar">
-            <div class="logo">
-                <a href="#" class="logoFirstPart">Eu, <span id="logoSecondPart">Cinema</span></a>
-            </div>
+        <nav class="navbar">
+            <a href="#" class="logo"><span id="logoFirstPart">Eu, </span><span id="logoSecondPart">Cinema</span></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Apoie</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+            </ul>
 
-            <nav>
-                <ul>
-                    <li><a href="" class="section">Início</a></li>
-                    <li><a href="" class="section">Quem Somos</a></li>
-                    <li><a href="" class="section">Apoie</a></li>
-                    <li><a href="" class="section">Contato</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="username">username</a> 
+        
 
-            <div class="usernameConteiner">
-                <a href="#" class="username">username</a> 
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </div>
-        <div class="topicos-bar">
+        </nav>   
+        
+        <div class="topics-bar">
             <nav>
                 <ul>
                     <li><a href="" class="topic">Todos</a></li>
@@ -41,7 +43,8 @@
             </nav>
         </div>
     </header>
-    <main>
+
+    <main class="main">
         <div class="artigos">
             <div class="article">
                 <a href="#"><img src="./images/aurora.jpg" alt="Capa" class="cover"></a>
@@ -88,5 +91,7 @@
         </div>
     </main>
     <footer></footer>
+
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>
