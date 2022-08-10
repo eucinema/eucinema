@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eu, Cinema</title>
-
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -32,7 +31,7 @@
         </nav>   
         
         <div class="topics-bar">
-            <nav>
+            <nav class="topics">
                 <ul>
                     <li><a href="" class="topic">Todos</a></li>
                     <li><a href="" class="topic">Filmes</a></li>
@@ -41,13 +40,21 @@
                     <li><a href="" class="topic">Séries</a></li>
                 </ul>
             </nav>
+
+            <select class="topics-selection">
+                <option value="todos">Todos</option>
+                <option value="filmes">Filmes</option>
+                <option value="animes">Animes</option>
+                <option value="animacoes">Animações</option>
+                <option value="series">Séries</option>
+            </select>
         </div>
     </header>
 
     <main class="main">
-        <div class="artigos">
+        <div class="articles">
             <div class="article">
-                <a href="#"><img src="./images/aurora.jpg" alt="Capa" class="cover"></a>
+                <div class="image"><a href="#"><img src="./images/aurora.jpg" alt="Capa" class="cover"></a></div>
                 <a href="#"><h2 class="article-title">A Simbologia da Aurora Boreal nos Filmes</h2></a>
                 <p class="article-description">Auroras boreais são lindas e não é a toa que são muito bem exploradas
                 nos cinemas. Um bom diretor usa dos elementos em uma cena para passar uma mensagem ao espectador...

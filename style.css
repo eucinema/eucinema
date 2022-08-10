@@ -45,6 +45,10 @@ a {
     background-color: rgb(255, 0, 0);
 }
 
+.topics-selection {
+    display: none;
+}
+
 .topics-bar {
     display: flex;
     flex-direction: row;
@@ -98,10 +102,13 @@ main {
     background-color: white;
 }
 
-.artigos {
+.articles {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 80%;
+    
 }
 
 .article {
@@ -112,8 +119,9 @@ main {
     padding: 1rem;
 }
 
+
 .cover {
-    max-width: 360px;
+    width: 21.5em;
     max-height: 190px;
 }
 
@@ -179,9 +187,13 @@ main {
     .nav-menu.active {
         left: 0;
     }
+    
+    .topics-bar {
+        display: none;
+    }
 
     .main.active {
-        margin-top: 280px;
+        margin-top: 320px;
     }
 
 }
