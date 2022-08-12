@@ -13,7 +13,7 @@ a {
     min-height: 70px;
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 24px;
     
@@ -62,9 +62,7 @@ a {
 }
 
 .logo {
-    margin-right: auto;
-    margin-left: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -77,10 +75,9 @@ a {
 }
 
 .username {
-    margin-left: auto;
-    margin-right: 20px;
     color: white;
     font-size: 1.2rem;
+    margin-right: 45px;
 }
 
 header nav ul {
