@@ -106,7 +106,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
 
     
 }
@@ -123,17 +123,14 @@ main {
 
 .cover {
     width: 100%;
-    
 }
 
 .article-title {
     width: 100%;
-    
 }
 
 .article-description {
     width: 100%;
-    
 }
 
 .author {
@@ -199,4 +196,16 @@ main {
         margin-top: 320px;
     }
 
+}
+
+@media only screen and (min-width: 1280px) {
+    .article {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .article {
+        max-width: 600px;
+    }
 }
