@@ -28,6 +28,7 @@ a {
 }
 
 .nav-link {
+    font-weight: 500;
     transition: 0.7s ease;
     color: white;
 }
@@ -90,8 +91,9 @@ a {
 }
 
 .username {
+    font-weight: 500;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .dropmenu-username {
