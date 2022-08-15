@@ -103,8 +103,7 @@ a {
     top: 70px;
     line-height: 35px;
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 
 .dropmenu-username li a {
@@ -114,8 +113,7 @@ a {
 }
 
 .navbar ul li:hover .dropmenu-username {
-    visibility: visible;
-    opacity: 1;
+    display: block;
     transition: all 0.3s ease;
 }
 
