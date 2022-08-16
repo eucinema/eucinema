@@ -33,7 +33,7 @@ a {
     color: white;
 }
 
-.nav-link:hover, .dropmenu-username li a:hover {
+.nav-link:hover, .dropmenu li a:hover {
     background: #242526;
 }
 
@@ -96,7 +96,7 @@ a {
     font-size: 1.3rem;
 }
 
-.dropmenu-username {
+.dropmenu {
     display: block;
     background: black;
     width: 180px;
@@ -106,13 +106,13 @@ a {
     display: none;
 }
 
-.dropmenu-username li a {
+.dropmenu li a {
     color: white;
     font-weight: 400;
     transition: all 0.3s ease;
 }
 
-.navbar ul li:hover .dropmenu-username {
+.navbar ul li:hover .dropmenu {
     display: block;
     transition: all 0.3s ease;
 }
