@@ -146,7 +146,12 @@ h1{
 }
 
 article p {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color:rgb(65, 65, 65);
+    font-weight: 400;
     text-align: justify;
 }
 article img{
