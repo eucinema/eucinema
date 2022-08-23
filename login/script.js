@@ -1,19 +1,20 @@
-function loginTab(){
-    window.location.href = "login.html";
+function cadastroTab(){
+    window.location.href = "Cadastrar.html";
 }
 function enter(){
     window.location.href = "../index.html"
 }
-// Verificações de formularios
+// Verificações de formularios 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    if(userCheck() == "True" && emailCheck() == "True" && passCheck() == "True"){
+    if(userCheck() == "True" && emailCheck() == "True" && passCheck() == "True" && confirmPassCheck() == "True"){
         enter();
     }else{
 
@@ -56,6 +57,25 @@ function passCheck(){
         setSuccessFor(password);
         return "True";
     }
+}
+
+function confirmPassCheck(){
+    const confirmPasswordValue = confirmPassword.value.trim();
+    const passwordValue = password.value.trim();
+    if(confirmPasswordValue === '') {
+        setErrorFor(confirmPassword, 'Preencha esse campo');
+        return "False";
+    } else if(confirmPasswordValue.length < 8) { 
+        setErrorFor(confirmPassword, 'Senha deve ter mais que 8 caracteres');
+        return "False";
+    } else if(confirmPasswordValue !== passwordValue){
+        setErrorFor(confirmPassword, 'As senhas devem ser iguais')
+        return"False";
+    }else{    
+        setSuccessFor(confirmPassword);
+        return "True";
+    }
+
 }
 function setErrorFor(input, message) {
     const formControl = input.parentElement;

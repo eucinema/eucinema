@@ -90,7 +90,7 @@ a {
     color: #FF4242;
 }
 
-.username {
+.login {
     font-weight: 500;
     color: white;
     font-size: 1.3rem;
@@ -135,6 +135,10 @@ main {
     justify-content: center;
     background-color: white;
     margin-top: 50px;   
+}
+
+form {
+    color: white;
 }
 
 .articles {

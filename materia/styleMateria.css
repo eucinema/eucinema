@@ -17,7 +17,6 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 0 24px;
-    
 }
 
 .nav-menu {
@@ -143,11 +142,12 @@ main {
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 article p {
     font-size: 1.2rem;
+    text-align: justify;
 }
 article img{
     margin: 20px 0;
@@ -159,7 +159,7 @@ article img{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40%;
+    width: 50%;
 }
 
 .cover {
@@ -198,6 +198,10 @@ article img{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    main {
+        margin: 0;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -221,7 +225,7 @@ article img{
         display: none;
     }
 
-    .main.active {
+    .active {
         margin-top: 320px;
     }
 
