@@ -17,6 +17,11 @@ const Artigo = sequelize.define('artigo', {
         primaryKey: true
     },
 
+    autor: {
+        type: Sequelize.STRING 
+        // Chave estrangeira de Usuário
+    },
+
     titulo: {
         type: Sequelize.STRING
     },
