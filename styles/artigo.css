@@ -1,0 +1,70 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "DM Sans", sans-serif; text-decoration: none;}
+
+html, body {
+    width: 100vw;
+}
+
+a {
+    color: black;
+}
+
+.redes{
+    display: flex;
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 20px;   
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+article p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color:rgb(65, 65, 65);
+    font-weight: 400;
+    text-align: justify;
+}
+article img{
+    margin: 20px 0;
+}
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+
+.cover {
+    width: 100%;
+}
+
+.author {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.profile-picture {
+    max-width: 40px;
+    border-radius: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .active {
+        margin-top: 320px;
+    }
+
+}

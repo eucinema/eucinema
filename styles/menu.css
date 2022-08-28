@@ -94,3 +94,60 @@ header nav ul li a {
     display: block;
     padding: 16px 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .username {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item li a {
+        margin-left: auto;
+    }
+    
+
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .dropmenu {
+        width: 100%;  
+    }
+}
