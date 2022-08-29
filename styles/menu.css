@@ -78,6 +78,67 @@
     transition: all 0.3s ease;
 }
 
+.login-button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 16px 36px;
+    border-radius: 16px;
+    font-size: 1.3rem;
+    font-weight: 650;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.login-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 9;
+}
+
+.login-container {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+}
+
+.login-container input[type=text], .login-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.login-container input[type=text]:focus, .login-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.login-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+.login-container .cancel {
+    background-color: red;
+}
+
+.login-container .btn:hover, .login-button:hover {
+    opacity: 1;
+}
+
 .navbar ul li:hover .dropmenu {
     display: block;
     transition: all 0.3s ease;

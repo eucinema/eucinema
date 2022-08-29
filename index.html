@@ -36,13 +36,29 @@
             
             <ul>
                 <li>
+                    <button class="login-button" onclick="openForm()">Entrar</button>
+                    <div class="login-popup" id="login">
+                        <form action="/action_page.php" class="login-container">
+                          <h1>Entrar</h1>
+                      
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Digite o email" name="email" required>
+                      
+                          <label for="psw"><b>Senha</b></label>
+                          <input type="password" placeholder="Digite a senha" name="psw" required>
+                      
+                          <button type="submit" class="btn">Entrar</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                        </form>
+                    </div>
+                    <!-- 
                     <a href="#" class="login">LOGIN</a>
                     <ul class="dropmenu">
-                        <!---                         
+                                                 
                         <li><a href="#">Escrever</a></li>
                         <li><a href="#">Favoritos</a></li>
                         <li><a href="#">Sair</a></li>
-                        --> 
+                         
                         <form class="form" id="form">
                             <div class="formcontrol">
                                 <label for="username" >Nome</label>
@@ -56,7 +72,7 @@
                             </div>
                             <button type="submit">ENTRAR</button>
                         </form>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
             
@@ -121,5 +137,6 @@
     <footer></footer>
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/pop-up-login.js"></script>
 </body>
 </html>
