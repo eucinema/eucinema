@@ -38,16 +38,16 @@
                 <li>
                     <button class="login-button" onclick="openForm()">Entrar</button>
                     <div class="login-popup" id="login">
-                        <form action="/action_page.php" class="login-container">
+                        <form action="#" class="login-container">
                           <h1>Entrar</h1>
                       
                           <label for="email"><b>Email</b></label>
-                          <input type="text" placeholder="Digite o email" name="email" required>
+                          <input type="text" placeholder="Digite o email" name="email" id="email" required>
                       
                           <label for="psw"><b>Senha</b></label>
-                          <input type="password" placeholder="Digite a senha" name="psw" required>
+                          <input type="password" placeholder="Digite a senha" name="psw" id="psw" required>
                       
-                          <button type="submit" class="btn">Entrar</button>
+                          <button type="submit" class="btn" onclick="login()">Entrar</button>
                           <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
                         </form>
                     </div>
