@@ -28,6 +28,10 @@ const Artigo = sequelize.define('artigo', {
 
     conteudo: {
         type: Sequelize.TEXT
+    },
+
+    categoria: {
+        type: Sequelize.STRING
     }
 })
 
@@ -73,8 +77,9 @@ const ArtigosSalvos = sequelize.define('artigosSalvos', {
 
 
 /* Recria as tabelas do banco de dados, não use se estiver se conectando ao banco com os dados já existentes
+*/
 ArtigosSalvos.sync({force: true})
 LikesDados.sync({force: true})
 Usuario.sync({force: true})
 Artigo.sync({force: true})
-*/
+
