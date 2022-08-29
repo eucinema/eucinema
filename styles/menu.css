@@ -98,6 +98,7 @@
     transform: translate(-50%, -50%);
     padding: 10px;
     z-index: 9;
+    color: white;
 }
 
 .login-container {
@@ -137,6 +138,10 @@
 
 .login-container .btn:hover, .login-button:hover {
     opacity: 1;
+}
+
+.username {
+    display: none;
 }
 
 .navbar ul li:hover .dropmenu {

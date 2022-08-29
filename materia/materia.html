@@ -31,7 +31,28 @@
                 <li class='nav-item'><a href='' class='nav-link'>Contato</a></li>
 
             </ul>
+
+            <ul>
+                <li>
+                    <button class="login-button" onclick="openForm()">Entrar</button>
+                    <div class="login-popup" id="login">
+                        <form action="#" class="login-container">
+                          <h1>Entrar</h1>
+                      
+                          <label for="user"><b>Usuário</b></label>
+                          <input type="text" placeholder="Digite o nome de usuário" name="user" id="user" required>
+                      
+                          <label for="psw"><b>Senha</b></label>
+                          <input type="password" placeholder="Digite a senha" name="psw" id="psw" required>
+                      
+                          <button type="submit" class="btn" onclick="login()">Entrar</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
             
+            <!--
             <ul>
                 <li>
                     <a href='#' class='username'>username</a>
@@ -40,9 +61,11 @@
                         <li><a href='#'>Favoritos</a></li>
                         <li><a href='#'>Sair</a></li>
                         
-                    </ul>
+                    </ul> 
                 </li>
             </ul>
+            -->
+
             <div class='hamburger'>
                 <span class='bar'></span>
                 <span class='bar'></span>
@@ -85,5 +108,6 @@
     <footer></footer>
     
     <script src='../scripts/hamburger.js'></script>
+    <script src="../scripts/pop-up-login.js"></script>
 </body>
 </html>

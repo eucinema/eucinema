@@ -7,7 +7,12 @@ function closeForm() {
 }
 
 function login() {
-    let email = document.getElementById("email").value; 
+    let user = document.getElementById("user").value; 
     let psw = document.getElementById("psw").value; 
-    console.log(email, psw);
+    console.log(user, psw);
+
+    // adicionar o usuário da pessoa com suas permissões
+    if (true) {
+        
+    }
 }
