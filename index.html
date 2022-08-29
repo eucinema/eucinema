@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eu, Cinema</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
 
 </head>
 <body>
@@ -18,11 +20,11 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">Seções</a>
                     <ul class="dropmenu">
-                        <li><a href="#" class="topic">Todos</a></li>
-                        <li><a href="#" class="topic">Filmes</a></li>
-                        <li><a href="#" class="topic">Animes</a></li>
-                        <li><a href="#" class="topic">Animações</a></li>
-                        <li><a href="#" class="topic">Séries</a></li>
+                        <li><a href="#">Todos</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Animes</a></li>
+                        <li><a href="#">Animações</a></li>
+                        <li><a href="#">Séries</a></li>
                     </ul>
                 </li>
 
@@ -34,22 +36,21 @@
             
             <ul>
                 <li>
-                    <a href="#" class="login">LOGIN</a>
-                    <ul class="dropmenu">
-                        <form class="form" id="form">
-                            <div class="formcontrol">
-                                <label for="username" >Nome</label>
-                                <input type="text" id="username" maxlength="20">
-                                <small>Error Message</small>
-                            </div>
-                            <div class="formcontrol">
-                                <label>Email</label>
-                                <input type="email" id="email">
-                                <small>Error Message</small>
-                            </div>
-                            <button type="submit">ENTRAR</button>
+                    <button class="login-button" onclick="openForm()">Entrar</button>
+                    <div class="login-popup" id="login">
+                        <form action="#" class="login-container">
+                          <h1>Entrar</h1>
+                      
+                          <label for="user"><b>Usuário</b></label>
+                          <input type="text" placeholder="Digite o nome de usuário" name="user" id="user" required>
+                      
+                          <label for="psw"><b>Senha</b></label>
+                          <input type="password" placeholder="Digite a senha" name="psw" id="psw" required>
+                      
+                          <button type="submit" class="btn" onclick="login()">Entrar</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
                         </form>
-                    </ul>
+                    </div>
                 </li>
             </ul>
             
@@ -66,8 +67,8 @@
     <main class="main">
         <div class="articles">
             <div class="article">
-                <div class="image"><a href="#"><img src="./images/aurora.jpg" alt="Capa" class="cover"></a></div>
-                <a href="#"><h2 class="article-title">A Simbologia da Aurora Boreal nos Filmes</h2></a>
+                <div class="image"><a href="materia\materia.html"><img src="./images/aurora.jpg" alt="Capa" class="cover"></a></div>
+                <a href="materia\materia.html"><h2 class="article-title">A Simbologia da Aurora Boreal nos Filmes</h2></a>
                 <p class="article-description">
                     Auroras boreais são lindas e não é a toa que são muito bem exploradas
                     nos cinemas. Um bom diretor usa dos elementos em uma cena para passar uma mensagem ao espectador...
@@ -114,5 +115,6 @@
     <footer></footer>
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/pop-up-login.js"></script>
 </body>
 </html>
