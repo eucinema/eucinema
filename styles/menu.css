@@ -63,6 +63,14 @@
     font-size: 1.3rem;
 }
 
+.cadastro{
+    color: white;
+    font-size: 0.7rem; 
+    margin-top: -25px;
+    margin-left: -20px;
+    display: flex;
+}
+
 .dropmenu {
     display: block;
     background: black;
