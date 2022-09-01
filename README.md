@@ -1,4 +1,2 @@
 # Eu, Cinema
-Uma revista sobre mídia audiovisual. Nossa história começa com os membros do <a href="https://www.instagram.com/cine_clubeifal/">CineClube Ifal</a> se juntarem para produzir uma revista, começamos escrevendo e postando artigos semanalmente no <a href="https://medium.com/@revistaeucinema">Medium</a>, e finalmente estamos criando um espaço só nosso. 
-
-Você pode estar vendo o estado atual do site em desenvolvimento aqui: https://eucinema.vercel.app/
+Uma revista online sobre mídia audiovisual, nós somos um grupo de estudantes do Ifal que algum dia fizemos parte do <a href="https://www.instagram.com/cine_clubeifal/">CineClube Ifal</a> e criamos a "Eu, Cinema", atuando primeiramente no <a href="https://medium.com/@revistaeucinema">Medium</a>, e agora estamos finalmente fazendo nosso próprio site. 
